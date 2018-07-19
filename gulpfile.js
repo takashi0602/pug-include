@@ -5,7 +5,7 @@ const pug = require('gulp-pug')
 gulp.task('pug', () => {
     gulp.src([ './assets/pug/*.pug', '!./assets/pug/_*.pug' ])
         .pipe(pug({ pretty: true }))
-        .pipe(gulp.dest('./public/'))
+        .pipe(gulp.dest('./docs/'))
 })
 
 // Pugの自動コンパイル
